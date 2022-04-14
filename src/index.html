@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive Rating Component</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<script defer src="./script.js"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="card__icon__container"><img class="card__icon" src="./assets/icon-star.svg" alt=""></div>
+		<h2 class="card__title">How did we do?</h2>
+		<p class="card__text">Please let us know how we did with your support request. All feedback is appreciated to help
+			us improve our offering!</p>
+		<form action="">
+			<div class="card__rating">
+				<input type="radio" name="rating" id="ratingValue1" class="card__rating-value" value="1"><label
+					for="ratingValue1">1</label>
+				<input type="radio" name="rating" id="ratingValue2" class="card__rating-value" value="2"><label
+					for="ratingValue1">2</label>
+				<input type="radio" name="rating" id="ratingValue3" class="card__rating-value" value="3"><label
+					for="ratingValue1">3</label>
+				<input type="radio" name="rating" id="ratingValue4" class="card__rating-value" value="4"><label
+					for="ratingValue1">4</label>
+				<input type="radio" name="rating" id="ratingValue5" class="card__rating-value" value="5"><label
+					for="ratingValue1">5</label>
+				<!-- <span class="card__rating-value">1</span>
+				<span class="card__rating-value">2</span>
+				<span class="card__rating-value">3</span>
+				<span class="card__rating-value">4</span>
+				<span class="card__rating-value">5</span> -->
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+
+</body>
+
+</html>
