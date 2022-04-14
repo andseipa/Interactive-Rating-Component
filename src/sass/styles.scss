@@ -1,0 +1,25 @@
+:root {
+  --clr-neutral-100: #ffffff; // Pure White
+  --clr-neutral-200: #d5d4d8;
+  --clr-neutral-300: #969fad; // Light Grey
+  --clr-neutral-400: #7c8798; // Medium Grey
+  --clr-neutral-500: #202b3c;
+  --clr-neutral-600: #202b3c;
+  --clr-neutral-700: #262e38; // Dark Blue
+  --clr-neutral-800: #131518; // Very Dark Blue
+
+  --clr-accent-400: #fc7614;
+  // --clr-accent-600: #10b981;
+
+  --clr-bg: #1c1c1c;
+  --clr-gradient: radial-gradient(circle at top, #232a34, #181e27);
+  // --clr-gradient: radial-gradient(#232a34, #181e27);
+}
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;700&display=swap");
+@import "reset";
+@import "general";
+@import "components";
+
+.hidden {
+  display: none;
+}

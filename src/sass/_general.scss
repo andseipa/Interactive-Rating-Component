@@ -1,0 +1,120 @@
+body {
+  min-height: 100vh;
+  background: var(--clr-neutral-800);
+  // background-color: var(--clr-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--clr-neutral-100);
+}
+
+*,
+*::before,
+*::after {
+  transition: all 150ms ease-in-out;
+}
+
+:root {
+  --border-radius: 30px;
+  --padding: 34px;
+  --card-width: 412px;
+  --card-height: 416px;
+
+  --icon-size: 48px;
+}
+
+.card {
+  background: var(--clr-gradient);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: var(--padding);
+  width: var(--card-width);
+  height: var(--card-height);
+  // margin: var(--margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // & > * + * {
+  //   margin-top: 20px;
+  // }
+}
+// * {
+//   outline: 1px solid magenta;
+// }
+.card__icon__container {
+  width: 48px;
+  aspect-ratio: 1/1;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-neutral-700);
+  border-radius: 50%;
+  img {
+    width: 17px;
+  }
+}
+
+.card__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--clr-neutral-100);
+  // margin-bottom: var(--padding);
+  // margin: 0;
+}
+.card__text {
+  color: var(--clr-neutral-300);
+  margin: 0;
+}
+
+.card__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &-value {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      z-index: -1;
+      background: var(--clr-neutral-700);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+button {
+  font-weight: 600;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  text-transform: uppercase;
+  border: none;
+  padding-top: 7px;
+  // padding: 10px 10px 5px 10px;
+  height: 45px;
+  border-radius: 100px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  // transition: all 150ms ease-in-out;
+  &:hover {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-accent-400);
+  }
+}
