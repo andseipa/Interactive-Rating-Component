@@ -13,19 +13,33 @@
 
 <body>
 
-	<div class="card">
+	<div class="card card--1" id="card--1">
 		<div class="card__icon__container"><img class="card__icon" src="./assets/icon-star.svg" alt=""></div>
 		<h2 class="card__title">How did we do?</h2>
 		<p class="card__text">Please let us know how we did with your support request. All feedback is appreciated to help
 			us improve our offering!</p>
 		<div class="card__rating">
-			<span class="card__rating-value">1</span>
-			<span class="card__rating-value">2</span>
-			<span class="card__rating-value">3</span>
-			<span class="card__rating-value">4</span>
-			<span class="card__rating-value">5</span>
+			<input type="radio" name="rating" id="ratingValue1" value="1">
+			<input type="radio" name="rating" id="ratingValue2" value="2">
+			<input type="radio" name="rating" id="ratingValue3" value="3">
+			<input type="radio" name="rating" id="ratingValue4" value="4">
+			<input type="radio" name="rating" id="ratingValue5" value="5">
+			<label class="card__rating-value" for="ratingValue1"><span>1</span></label>
+			<label class="card__rating-value" for="ratingValue2"><span>2</span></label>
+			<label class="card__rating-value" for="ratingValue3"><span>3</span></label>
+			<label class="card__rating-value" for="ratingValue4"><span>4</span></label>
+			<label class="card__rating-value" for="ratingValue5"><span>5</span></label>
 		</div>
-		<button type="submit">Submit</button>
+		<button id="ratingSubmit" type="submit">Submit</button>
+	</div>
+
+	<div class="card card--2 hidden" id="card--2">
+		<img class="card__image" src="./assets/illustration-thank-you.svg" alt="">
+		<div class="card__result">You selected <span id="resultOutput">4</span> out of 5</div>
+		<h2 class="card__title">Thank you!</h2>
+		<p class="card__text">We appreciate you taking the time to give a rating. If you ever need more support, don't
+			hesitate to get in touch!</p>
+
 	</div>
 
 </body>
